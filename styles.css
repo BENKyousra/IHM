@@ -79,7 +79,7 @@ nav {
 .welcome {
     display: flex;
     justify-content: center;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.792), rgba(0, 102, 54, 0.594)), url(image1.jpg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.792), rgba(0, 102, 54, 0.594)), url(assets/images/image1.jpg);
     background-size: cover;
     background-position: center;
     color: white;

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نموذج المعلومات الشخصية</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="name-logo">
+            <img src="assets/images/logo.png" alt="شعار" class="logo">
+            <div class="title">
+                <p>سفارة المملكة العربية السعودية</p>
+                <p>القسم القنصلي</p>
+            </div>
+        </div>
+        <ul class="menu">
+            <li><a href="home_AR.html">الرئيسية</a></li>
+            <li><a href="registration.html">الخدمات</a></li>
+            <li><a href="contact_AR.html">اتصل بنا</a></li>
+            <li><a href="about_AR.html">من نحن</a></li>
+        </ul>
+        <button class="lang-button" onclick="window.location.href='home_EN.html'">EN</button>
+    </nav>
+    <div class="container">
+        
+        
+        <main class="form-container">
+            <form id="personalInfoForm">
+                
+                <!-- 🟦 القسم الأول: المعلومات الأساسية -->
+                <section class="form-section">
+                    <div class="section-title">
+                        <i>1</i><h2>المعلومات الأساسية</h2>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">الاسم</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lastName">اللقب</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="birthDate">تاريخ الميلاد</label>
+                            <input type="date" id="birthDate" name="birthDate" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nationality">الجنسية</label>
+                            <select id="nationality" name="nationality" required>
+                                <option value="">اختر الجنسية</option>
+                                <option value="algerian">جزائرية</option>
+                                <option value="moroccan">مغربية</option>
+                                <option value="tunisian">تونسية</option>
+                                <option value="other">أخرى</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="birthPlace">مكان الازدياد</label>
+                            <input type="text" id="birthPlace" name="birthPlace" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>الجنس</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="gender" value="male" required> ذكر</label>
+                                <label><input type="radio" name="gender" value="female"> أنثى</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="passportNumber">رقم جواز السفر</label>
+                            <input type="text" id="passportNumber" name="passportNumber" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="passportDate">تاريخ إصدار الجواز</label>
+                            <input type="date" id="passportDate" name="passportDate" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="passportExDate">تاريخ انتهاء الصلاحية</label>
+                            <input type="date" id="passportExDate" name="passportExDate" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="passportCountry">مكان إصدار الجواز</label>
+                            <input type="text" id="passportCountry" name="passportCountry" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="familyStatus">الحالة العائلية</label>
+                            <select id="familyStatus" name="familyStatus" required>
+                                <option value="">اختر الحالة</option>
+                                <option value="single">عازب</option>
+                                <option value="married">متزوج</option>
+                                <option value="divorced">مطلق</option>
+                                <option value="other">أخرى</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="job">المهنة الحالية</label>
+                            <input type="text" id="job" name="job" required>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 🟦 القسم الثاني: معلومات الاتصال -->
+                <section class="form-section">
+                    <div class="section-title">
+                        <i>2</i><h2>معلومات الاتصال</h2>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">رقم الهاتف</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="residence">مكان الإقامة</label>
+                            <input type="text" id="residence" name="residence" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="applicationPlace">مكان تقديم الطلب</label>
+                            <input type="text" id="applicationPlace" name="applicationPlace" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <label for="address">العنوان الكامل</label>
+                            <textarea id="address" name="address" rows="3" required></textarea>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 🟦 القسم الثالث: المعلومات المهنية -->
+                <section class="form-section">
+                    <div class="section-title">
+                        <i>3</i><h2>المعلومات المهنية</h2>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="jobTitle">المسمى الوظيفي</label>
+                            <input type="text" id="jobTitle" name="jobTitle">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">الشركة / المؤسسة</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="education">المستوى التعليمي</label>
+                            <select id="education" name="education">
+                                <option value="">اختر المستوى</option>
+                                <option value="highschool">ثانوية عامة</option>
+                                <option value="diploma">دبلوم</option>
+                                <option value="bachelor">بكالوريوس</option>
+                                <option value="master">ماجستير</option>
+                                <option value="phd">دكتوراه</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="skills">المهارات</label>
+                            <input type="text" id="skills" name="skills" placeholder="افصل بين المهارات بفاصلة">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 🟦 القسم الرابع: معلومات الرحلة -->
+                <section class="form-section">
+                    <div class="section-title">
+                        <i>4</i><h2>معلومات حول الرحلة</h2>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="destinationCountry">بلد الوجهة</label>
+                            <input type="text" id="destinationCountry" name="destinationCountry" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="visaType">نوع التأشيرة</label>
+                            <select id="visaType" name="visaType" required>
+                                <option value="">اختر النوع</option>
+                                <option value="tourism">سياحة</option>
+                                <option value="study">دراسة</option>
+                                <option value="work">عمل</option>
+                                <option value="family">عائلة</option>
+                                <option value="other">أخرى</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="travelReason">سبب السفر</label>
+                            <input type="text" id="travelReason" name="travelReason" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="departureDate">تاريخ المغادرة</label>
+                            <input type="date" id="departureDate" name="departureDate" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="returnDate">تاريخ العودة / مدة الإقامة</label>
+                            <input type="text" id="returnDate" name="returnDate" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="stayAddress">مكان الإقامة</label>
+                            <input type="text" id="stayAddress" name="stayAddress" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inviter">الجهة الداعية</label>
+                            <input type="text" id="inviter" name="inviter" placeholder="الاسم أو المنظمة">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <label for="finance">التمويل</label>
+                            <input type="text" id="finance" name="finance" placeholder="تمويل شخصي، راعٍ مالي...">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 🟦 القسم الخامس: معلومات إضافية -->
+                <section class="form-section">
+                    <div class="section-title">
+                        <i>5</i><h2>معلومات إضافية</h2>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="preferredLanguage">اللغة المفضلة</label>
+                            <select id="preferredLanguage" name="preferredLanguage">
+                                <option value="">اختر</option>
+                                <option value="arabic">العربية</option>
+                                <option value="french">الفرنسية</option>
+                                <option value="english">الإنجليزية</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="userType">نوع المستخدم</label>
+                            <select id="userType" name="userType">
+                                <option value="">اختر</option>
+                                <option value="standard">عادي</option>
+                                <option value="senior">شخص مسن</option>
+                                <option value="nonFrench">غير ناطق بالفرنسية</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="techLevel">مستوى الراحة مع التكنولوجيا</label>
+                            <select id="techLevel" name="techLevel">
+                                <option value="">اختر</option>
+                                <option value="easy">سهل</option>
+                                <option value="medium">متوسط</option>
+                                <option value="hard">صعب</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="specialNeeds">الاحتياجات الخاصة</label>
+                            <input type="text" id="specialNeeds" name="specialNeeds" placeholder="البصر، السمع، الحركة...">
+                        </div>
+                    </div>
+                </section>
+                 <!-- القسم السادس: الوثائق المطلوبة -->
+                <div class="form-section">
+                    <div class="section-title">
+                    <i>6</i>
+                    <h2>الوثائق المطلوبة</h2>
+                </div>
+
+                <p> الملفات التي يجب على مقدم الطلب إرفاقها:</p>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="photo">📷 صورة شخصية حديثة</label>
+                        <input type="file" id="photo" name="photo" accept="image/*" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="passportCopy">📁 نسخة أو مسح ضوئي لجواز السفر</label>
+                        <input type="file" id="passportCopy" name="passportCopy" accept=".pdf,.jpg,.png" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="hostingProof">🏨 إثبات الإقامة (دعوة أو حجز فندقي...)</label>
+                        <input type="file" id="hostingProof" name="hostingProof" accept=".pdf,.jpg,.png">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="flightTicket">✈️ تذكرة الطائرة (إن وُجدت)</label>
+                        <input type="file" id="flightTicket" name="flightTicket" accept=".pdf,.jpg,.png">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="workProof">📑 شهادة العمل أو التسجيل (في حال الدراسة)</label>
+                        <input type="file" id="workProof" name="workProof" accept=".pdf,.jpg,.png">
+                    </div>
+
+                <div class="form-group">
+                        <label for="bankStatement">💰 كشف بنكي أو إثبات الموارد المالية</label>
+                        <input type="file" id="bankStatement" name="bankStatement" accept=".pdf,.jpg,.png">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group full-width">
+                        <label for="insurance">🩺 تأمين السفر (إذا كان مطلوبًا)</label>
+                        <input type="file" id="insurance" name="insurance" accept=".pdf,.jpg,.png">
+                    </div>
+                </div>
+            </div>
+
+
+                <!-- القسم السابع: التحقق والموافقة -->
+                <div class="form-section">
+                    <div class="section-title">
+                        <i>7</i>
+                        <h2>التحقق والموافقة</h2>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">أوافق على جميع الشروط والأحكام المذكورة.</label>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="signature">✍️ التوقيع الإلكتروني أو اليدوي</label>
+                            <input type="text" id="signature" name="signature" placeholder="أدخل اسمك كتوقيع">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="submissionDate">📅 تاريخ تقديم الطلب</label>
+                            <input type="date" id="submissionDate" name="submissionDate" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- الأزرار -->
+                <div class="buttons">
+                    <button type="submit" class="submit-btn">💾 حفظ المعلومات</button>
+                    <button type="reset" class="reset-btn">🔄 إعادة تعيين</button>
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <script>
+        document.getElementById('personalInfoForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('✅ تم حفظ المعلومات بنجاح!');
+        });
+    </script>
+</body>
+</html>
