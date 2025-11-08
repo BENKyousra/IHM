@@ -1,3 +1,12 @@
+const current = location.pathname.split("/").pop();
+const menuItems = document.querySelectorAll("nav ul li a");
+
+menuItems.forEach(item => {
+  if (item.getAttribute("href") === current) {
+    item.parentElement.classList.add("active");
+  }
+});
+
 const apiKey = "a66d9031de5acb1e75e759f017458475"; // ✅ ta clé API
 const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Mecca,SA&appid=${apiKey}&units=metric&lang=fr`;
 

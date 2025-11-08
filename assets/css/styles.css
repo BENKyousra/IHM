@@ -201,8 +201,137 @@ nav ul li.active a {
 }
 
 .visa-types {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+    /* Adaptatif */
+    gap: 2vw;
+    /* Espace entre les cartes */
+    justify-items: center;
+    /* Centre les cartes dans chaque cellule */
+    align-items: center;
     color: white;
+    padding: 2vw;
+}
 
+.tourist {
+    height: 30vw;
+    width: 30vw;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.441), rgba(0, 0, 0, 0.594)), url(../images/image5.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 1vw;
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 3vw;
+
+}
+.tourist:hover {
+    transform: scale(1.02);
+}
+
+.student {
+    height: 30vw;
+    width: 30vw;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.441), rgba(0, 0, 0, 0.594)), url(../images/image8.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 1vw;
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 3vw;
+}
+.student:hover {
+    transform: scale(1.02);
+}
+
+.business {
+    height: 30vw;
+    width: 30vw;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.441), rgba(0, 0, 0, 0.594)), url(../images/image9.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 1vw;
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 3vw;
+}
+.business:hover {
+    transform: scale(1.02);
+}
+
+.hajj {
+    height: 30vw;
+    width: 30vw;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.441), rgba(0, 0, 0, 0.594)), url(../images/image4.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 1vw;
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 3vw;
+}
+.hajj:hover {
+    transform: scale(1.02);
+}
+
+.umrah {
+    height: 30vw;
+    width: 30vw;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.441), rgba(0, 0, 0, 0.594)), url(../images/image10.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 1vw;
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 3vw;
+}
+.umrah:hover {
+    transform: scale(1.02);
+}
+
+.family {
+    height: 30vw;
+    width: 30vw;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.441), rgba(0, 0, 0, 0.594)), url(../images/image11.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 1vw;
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 3vw;
+}
+.family:hover {
+    transform: scale(1.02);
 }
 
 footer {
@@ -212,5 +341,4 @@ footer {
     padding: 0;
     width: 100%;
     font-size: 1.125vw;
-    /* 18px */
 }
