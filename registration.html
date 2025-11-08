@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>نموذج المعلومات الشخصية</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
     <nav class="navbar">
         <div class="name-logo">
@@ -17,24 +19,25 @@
         </div>
         <ul class="menu">
             <li><a href="home_AR.html">الرئيسية</a></li>
-            <li><a href="registration.html">الخدمات</a></li>
+            <li><a href="registration.html">التسجيل</a></li>
             <li><a href="contact_AR.html">اتصل بنا</a></li>
             <li><a href="about_AR.html">من نحن</a></li>
         </ul>
         <button class="lang-button" onclick="window.location.href='home_EN.html'">EN</button>
     </nav>
     <div class="container">
-        
-        
+
+
         <main class="form-container">
             <form id="personalInfoForm">
-                
+
                 <!-- 🟦 القسم الأول: المعلومات الأساسية -->
                 <section class="form-section">
                     <div class="section-title">
-                        <i>1</i><h2>المعلومات الأساسية</h2>
+                        <i>1</i>
+                        <h2>المعلومات الأساسية</h2>
                     </div>
-                    
+
                     <div class="form-row">
                         <div class="form-group">
                             <label for="firstName">الاسم</label>
@@ -51,7 +54,7 @@
                             <input type="date" id="birthDate" name="birthDate" required>
                         </div>
                     </div>
-                    
+
                     <div class="form-row">
                         <div class="form-group">
                             <label for="nationality">الجنسية</label>
@@ -122,9 +125,10 @@
                 <!-- 🟦 القسم الثاني: معلومات الاتصال -->
                 <section class="form-section">
                     <div class="section-title">
-                        <i>2</i><h2>معلومات الاتصال</h2>
+                        <i>2</i>
+                        <h2>معلومات الاتصال</h2>
                     </div>
-                    
+
                     <div class="form-row">
                         <div class="form-group">
                             <label for="email">البريد الإلكتروني</label>
@@ -160,7 +164,8 @@
                 <!-- 🟦 القسم الثالث: المعلومات المهنية -->
                 <section class="form-section">
                     <div class="section-title">
-                        <i>3</i><h2>المعلومات المهنية</h2>
+                        <i>3</i>
+                        <h2>المعلومات المهنية</h2>
                     </div>
 
                     <div class="form-row">
@@ -168,7 +173,7 @@
                             <label for="jobTitle">المسمى الوظيفي</label>
                             <input type="text" id="jobTitle" name="jobTitle">
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="company">الشركة / المؤسسة</label>
                             <input type="text" id="company" name="company">
@@ -198,7 +203,8 @@
                 <!-- 🟦 القسم الرابع: معلومات الرحلة -->
                 <section class="form-section">
                     <div class="section-title">
-                        <i>4</i><h2>معلومات حول الرحلة</h2>
+                        <i>4</i>
+                        <h2>معلومات حول الرحلة</h2>
                     </div>
 
                     <div class="form-row">
@@ -260,7 +266,8 @@
                 <!-- 🟦 القسم الخامس: معلومات إضافية -->
                 <section class="form-section">
                     <div class="section-title">
-                        <i>5</i><h2>معلومات إضافية</h2>
+                        <i>5</i>
+                        <h2>معلومات إضافية</h2>
                     </div>
 
                     <div class="form-row">
@@ -298,62 +305,63 @@
 
                         <div class="form-group">
                             <label for="specialNeeds">الاحتياجات الخاصة</label>
-                            <input type="text" id="specialNeeds" name="specialNeeds" placeholder="البصر، السمع، الحركة...">
+                            <input type="text" id="specialNeeds" name="specialNeeds"
+                                placeholder="البصر، السمع، الحركة...">
                         </div>
                     </div>
                 </section>
-                 <!-- القسم السادس: الوثائق المطلوبة -->
+                <!-- القسم السادس: الوثائق المطلوبة -->
                 <div class="form-section">
                     <div class="section-title">
-                    <i>6</i>
-                    <h2>الوثائق المطلوبة</h2>
+                        <i>6</i>
+                        <h2>الوثائق المطلوبة</h2>
+                    </div>
+
+                    <p> الملفات التي يجب على مقدم الطلب إرفاقها:</p>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="photo">📷 صورة شخصية حديثة</label>
+                            <input type="file" id="photo" name="photo" accept="image/*" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="passportCopy">📁 نسخة أو مسح ضوئي لجواز السفر</label>
+                            <input type="file" id="passportCopy" name="passportCopy" accept=".pdf,.jpg,.png" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="hostingProof">🏨 إثبات الإقامة (دعوة أو حجز فندقي...)</label>
+                            <input type="file" id="hostingProof" name="hostingProof" accept=".pdf,.jpg,.png">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="flightTicket">✈️ تذكرة الطائرة (إن وُجدت)</label>
+                            <input type="file" id="flightTicket" name="flightTicket" accept=".pdf,.jpg,.png">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="workProof">📑 شهادة العمل أو التسجيل (في حال الدراسة)</label>
+                            <input type="file" id="workProof" name="workProof" accept=".pdf,.jpg,.png">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="bankStatement">💰 كشف بنكي أو إثبات الموارد المالية</label>
+                            <input type="file" id="bankStatement" name="bankStatement" accept=".pdf,.jpg,.png">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <label for="insurance">🩺 تأمين السفر (إذا كان مطلوبًا)</label>
+                            <input type="file" id="insurance" name="insurance" accept=".pdf,.jpg,.png">
+                        </div>
+                    </div>
                 </div>
-
-                <p> الملفات التي يجب على مقدم الطلب إرفاقها:</p>
-
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="photo">📷 صورة شخصية حديثة</label>
-                        <input type="file" id="photo" name="photo" accept="image/*" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="passportCopy">📁 نسخة أو مسح ضوئي لجواز السفر</label>
-                        <input type="file" id="passportCopy" name="passportCopy" accept=".pdf,.jpg,.png" required>
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="hostingProof">🏨 إثبات الإقامة (دعوة أو حجز فندقي...)</label>
-                        <input type="file" id="hostingProof" name="hostingProof" accept=".pdf,.jpg,.png">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="flightTicket">✈️ تذكرة الطائرة (إن وُجدت)</label>
-                        <input type="file" id="flightTicket" name="flightTicket" accept=".pdf,.jpg,.png">
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="workProof">📑 شهادة العمل أو التسجيل (في حال الدراسة)</label>
-                        <input type="file" id="workProof" name="workProof" accept=".pdf,.jpg,.png">
-                    </div>
-
-                <div class="form-group">
-                        <label for="bankStatement">💰 كشف بنكي أو إثبات الموارد المالية</label>
-                        <input type="file" id="bankStatement" name="bankStatement" accept=".pdf,.jpg,.png">
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group full-width">
-                        <label for="insurance">🩺 تأمين السفر (إذا كان مطلوبًا)</label>
-                        <input type="file" id="insurance" name="insurance" accept=".pdf,.jpg,.png">
-                    </div>
-                </div>
-            </div>
 
 
                 <!-- القسم السابع: التحقق والموافقة -->
@@ -391,12 +399,7 @@
             </form>
         </main>
     </div>
-
-    <script>
-        document.getElementById('personalInfoForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('✅ تم حفظ المعلومات بنجاح!');
-        });
-    </script>
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>

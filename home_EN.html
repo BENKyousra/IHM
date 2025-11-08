@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EMBASSY OF SAUDI ARABIA CONSULAR SECTION</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/icon.png">
 </head>
+
 <body>
     <nav class="navbar">
         <div class="name-logo">
@@ -31,23 +33,52 @@
             <p>consular section</p>
         </div>
     </div>
-    <aside>
-        <div class="news-section">
-            <div class="weather-card" id="weather">
-                <p>Chargement de la météo...</p>
+    <div class="content">
+        <aside class="aside">
+            <div class="news-section">
+                <div class="weather-card" id="weather">
+                    <p>Chargement de la météo...</p>
+                </div>
+                <br>
+                <div class="time">
+                    <h4>🕒 Local Time</h4>
+                    <p id="makkah-time"></p>
+                </div>
+                <h2>Latest News</h2>
+                <ul>
+                    <li><a href="#">Visa Application Process Update</a></li>
+                    <li><a href="#">New Consular Services Available</a></li>
+                    <li><a href="#">Holiday Schedule Announcement</a></li>
+                </ul>
             </div>
-            <h2>Latest News</h2>
-            <ul>
-                <li><a href="#">Visa Application Process Update</a></li>
-                <li><a href="#">New Consular Services Available</a></li>
-                <li><a href="#">Holiday Schedule Announcement</a></li>
-            </ul>
-        </div>
-
-    </aside>
+        </aside>
+        <main class="main">
+            <div class="visa-types">
+                <div class="type">
+                    <p>Tourist Visa</p>
+                </div>
+                <div class="type">
+                    <p>Student Visa</p>
+                </div>
+                <div class="type">
+                    <p>Business Visa</p>
+                </div>
+                <div class="type">
+                    <p>Hajj Visa</p>
+                </div>
+                <div class="type">
+                    <p>Umrah Visa</p>
+                </div>
+                <div class="type">
+                    <p>Family Visit Visa</p>
+                </div>
+            </div>
+        </main>
+    </div>
     <footer>
-        <p class="foot">&copy; 2024 Embassy of Saudi Arabia. All rights reserved.</p>   
+        <p class="foot">&copy; 2024 Embassy of Saudi Arabia. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
