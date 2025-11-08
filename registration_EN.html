@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information Form</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/icon.png">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="name-logo">
+            <img src="assets/images/logo.png" alt="Logo" class="logo">
+            <div class="title">
+                <p>Embassy of Saudi Arabia</p>
+                <p>Consular Section</p>
+            </div>
+        </div>
+        <ul class="menu">
+            <li><a href="home_EN.html">Home</a></li>
+            <li><a href="registration_EN.html">Registration</a></li>
+            <li><a href="contact_EN.html">Contact</a></li>
+            <li><a href="about_EN.html">About Us</a></li>
+        </ul>
+        <button class="lang-button" onclick="window.location.href='registration_AR.html'">AR</button>
+    </nav>
+
+    <div class="container">
+        <main class="form-container">
+            <form id="personalInfoForm">
+
+                <!-- Section 1: Basic Information -->
+                <section class="form-section">
+                    <div class="section-title">
+                        <i>1</i>
+                        <h2>Basic Information</h2>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="birthDate">Date of Birth</label>
+                            <input type="date" id="birthDate" name="birthDate" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nationality">Nationality</label>
+                            <select id="nationality" name="nationality" required>
+                                <option value="">Select Nationality</option>
+                                <option value="algerian">Algerian</option>
+                                <option value="moroccan">Moroccan</option>
+                                <option value="tunisian">Tunisian</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="birthPlace">Place of Birth</label>
+                            <input type="text" id="birthPlace" name="birthPlace" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Gender</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="gender" value="male" required> Male</label>
+                                <label><input type="radio" name="gender" value="female"> Female</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="passportNumber">Passport Number</label>
+                            <input type="text" id="passportNumber" name="passportNumber" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="passportDate">Passport Issue Date</label>
+                            <input type="date" id="passportDate" name="passportDate" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="passportExDate">Passport Expiry Date</label>
+                            <input type="date" id="passportExDate" name="passportExDate" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="passportCountry">Passport Issuing Country</label>
+                            <input type="text" id="passportCountry" name="passportCountry" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="familyStatus">Marital Status</label>
+                            <select id="familyStatus" name="familyStatus" required>
+                                <option value="">Select Status</option>
+                                <option value="single">Single</option>
+                                <option value="married">Married</option>
+                                <option value="divorced">Divorced</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="job">Current Occupation</label>
+                            <input type="text" id="job" name="job" required>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 2: Contact Information -->
+                <section class="form-section">
+                    <div class="section-title">
+                        <i>2</i>
+                        <h2>Contact Information</h2>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="residence">Place of Residence</label>
+                            <input type="text" id="residence" name="residence" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="applicationPlace">Place of Application</label>
+                            <input type="text" id="applicationPlace" name="applicationPlace" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <label for="address">Full Address</label>
+                            <textarea id="address" name="address" rows="3" required></textarea>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 3: Professional Information -->
+                <section class="form-section">
+                    <div class="section-title">
+                        <i>3</i>
+                        <h2>Professional Information</h2>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="jobTitle">Job Title</label>
+                            <input type="text" id="jobTitle" name="jobTitle">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company / Institution</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="education">Education Level</label>
+                            <select id="education" name="education">
+                                <option value="">Select Level</option>
+                                <option value="highschool">High School</option>
+                                <option value="diploma">Diploma</option>
+                                <option value="bachelor">Bachelor</option>
+                                <option value="master">Master</option>
+                                <option value="phd">PhD</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="skills">Skills</label>
+                            <input type="text" id="skills" name="skills" placeholder="Separate skills with commas">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 4: Travel Information -->
+                <section class="form-section">
+                    <div class="section-title">
+                        <i>4</i>
+                        <h2>Travel Information</h2>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="destinationCountry">Destination Country</label>
+                            <input type="text" id="destinationCountry" name="destinationCountry" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="visaType">Visa Type</label>
+                            <select id="visaType" name="visaType" required>
+                                <option value="">Select Type</option>
+                                <option value="tourism">Tourism</option>
+                                <option value="study">Study</option>
+                                <option value="work">Work</option>
+                                <option value="family">Family</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="travelReason">Reason for Travel</label>
+                            <input type="text" id="travelReason" name="travelReason" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="departureDate">Departure Date</label>
+                            <input type="date" id="departureDate" name="departureDate" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="returnDate">Return Date / Duration of Stay</label>
+                            <input type="text" id="returnDate" name="returnDate" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="stayAddress">Place of Stay</label>
+                            <input type="text" id="stayAddress" name="stayAddress" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inviter">Inviting Party</label>
+                            <input type="text" id="inviter" name="inviter" placeholder="Name or Organization">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <label for="finance">Financing</label>
+                            <input type="text" id="finance" name="finance" placeholder="Personal funds, sponsor...">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 5: Additional Information -->
+                <section class="form-section">
+                    <div class="section-title">
+                        <i>5</i>
+                        <h2>Additional Information</h2>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="preferredLanguage">Preferred Language</label>
+                            <select id="preferredLanguage" name="preferredLanguage">
+                                <option value="">Select</option>
+                                <option value="arabic">Arabic</option>
+                                <option value="french">French</option>
+                                <option value="english">English</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="userType">User Type</label>
+                            <select id="userType" name="userType">
+                                <option value="">Select</option>
+                                <option value="standard">Standard</option>
+                                <option value="senior">Senior</option>
+                                <option value="nonFrench">Non-French speaker</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="techLevel">Technology Comfort Level</label>
+                            <select id="techLevel" name="techLevel">
+                                <option value="">Select</option>
+                                <option value="easy">Easy</option>
+                                <option value="medium">Medium</option>
+                                <option value="hard">Hard</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="specialNeeds">Special Needs</label>
+                            <input type="text" id="specialNeeds" name="specialNeeds" placeholder="Vision, hearing, mobility...">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 6: Required Documents -->
+                <div class="form-section">
+                    <div class="section-title">
+                        <i>6</i>
+                        <h2>Required Documents</h2>
+                    </div>
+
+                    <p>Files that the applicant must attach:</p>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="photo">📷 Recent Passport Photo</label>
+                            <input type="file" id="photo" name="photo" accept="image/*" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="passportCopy">📁 Passport Copy / Scan</label>
+                            <input type="file" id="passportCopy" name="passportCopy" accept=".pdf,.jpg,.png" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="hostingProof">🏨 Proof of Accommodation (Invitation or Hotel Booking)</label>
+                            <input type="file" id="hostingProof" name="hostingProof" accept=".pdf,.jpg,.png">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="flightTicket">✈️ Flight Ticket (if available)</label>
+                            <input type="file" id="flightTicket" name="flightTicket" accept=".pdf,.jpg,.png">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="workProof">📑 Work Certificate or Enrollment (for students)</label>
+                            <input type="file" id="workProof" name="workProof" accept=".pdf,.jpg,.png">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="bankStatement">💰 Bank Statement or Proof of Funds</label>
+                            <input type="file" id="bankStatement" name="bankStatement" accept=".pdf,.jpg,.png">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <label for="insurance">🩺 Travel Insurance (if required)</label>
+                            <input type="file" id="insurance" name="insurance" accept=".pdf,.jpg,.png">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 7: Verification & Consent -->
+                <div class="form-section">
+                    <div class="section-title">
+                        <i>7</i>
+                        <h2>Verification & Consent</h2>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">I agree to all terms and conditions mentioned above.</label>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="signature">✍️ Digital or Handwritten Signature</label>
+                            <input type="text" id="signature" name="signature" placeholder="Enter your name as signature">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="submissionDate">📅 Date of Submission</label>
+                            <input type="date" id="submissionDate" name="submissionDate" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class="buttons">
+                    <button type="submit" class="submit-btn">💾 Save Information</button>
+                    <button type="reset" class="reset-btn">🔄 Reset</button>
+                </div>
+
+            </form>
+        </main>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
