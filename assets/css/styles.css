@@ -230,6 +230,7 @@ nav ul li.active a {
     font-size: 3vw;
 
 }
+
 .tourist:hover {
     transform: scale(1.02);
 }
@@ -250,6 +251,7 @@ nav ul li.active a {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     font-size: 3vw;
 }
+
 .student:hover {
     transform: scale(1.02);
 }
@@ -270,6 +272,7 @@ nav ul li.active a {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     font-size: 3vw;
 }
+
 .business:hover {
     transform: scale(1.02);
 }
@@ -290,6 +293,7 @@ nav ul li.active a {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     font-size: 3vw;
 }
+
 .hajj:hover {
     transform: scale(1.02);
 }
@@ -310,6 +314,7 @@ nav ul li.active a {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     font-size: 3vw;
 }
+
 .umrah:hover {
     transform: scale(1.02);
 }
@@ -330,6 +335,7 @@ nav ul li.active a {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     font-size: 3vw;
 }
+
 .family:hover {
     transform: scale(1.02);
 }
